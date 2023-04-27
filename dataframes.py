@@ -25,3 +25,7 @@ read_file = pd.read_csv(path)
 print(read_file)
 print(read_file.shape)
 
+# Save df to file
+
+read_file.to_csv("read_file.csv")
+
