@@ -21,6 +21,7 @@ series = pd.Series(["Talha", 26, "Male"],
 #print("-----------")
 path = str(os.getcwd()) + "/sample.csv"
 read_file = pd.read_csv(path)
+read_file.columns = ["Product_A", "Product_B","Product_C"]
 
 print(read_file)
 print(read_file.shape)
@@ -29,3 +30,11 @@ print(read_file.shape)
 
 read_file.to_csv("read_file.csv")
 
+
+# using the Loc method on Pandas DF
+print(read_file.iloc[:, 1])
+
+new_df = read_file.loc[(read_file.Product_A > 30)]
+
+print("*******************")
+print(new_df)
