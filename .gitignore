@@ -1,0 +1,3 @@
+# Ignore Dist File
+.dist/
+*.DS_Store
