@@ -15,4 +15,11 @@ print(f'The Mean Temperature is {temp.mean()} \n')
 low_temp = temp < temp.mean()
 print(temp[low_temp])
 
+colours = pd.Series(
+    data=['Red', 'Blue', 'Green', 'Orange', 'Black', 'Brown'],
+    dtype='category',
+)
+print("------------------")
+print(colours)
 
+print(colours.cat.ordered)
